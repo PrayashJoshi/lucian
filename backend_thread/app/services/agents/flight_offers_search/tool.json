@@ -1,0 +1,34 @@
+{
+  "type": "function",
+  "function": {
+    "name": "flight_offers_search",
+    "description": "Retrieves flight offers based on origin, destination, and travel dates.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "origin": {
+          "type": "string",
+          "description": "Origin city or airport code."
+        },
+        "destination": {
+          "type": "string",
+          "description": "Destination city or airport code."
+        },
+        "departure_date": {
+          "type": "string",
+          "description": "Departure date in YYYY-MM-DD format."
+        },
+        "return_date": {
+          "type": "string",
+          "description": "Return date in YYYY-MM-DD format.",
+          "default": null
+        }
+      },
+      "required": [
+        "origin",
+        "destination",
+        "departure_date"
+      ]
+    }
+  }
+}

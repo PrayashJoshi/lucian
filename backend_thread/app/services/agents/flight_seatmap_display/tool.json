@@ -1,0 +1,19 @@
+{
+  "type": "function",
+  "function": {
+    "name": "flight_seatmap_display",
+    "description": "Displays the seat map for a specific flight.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "flight_id": {
+          "type": "string",
+          "description": "The ID of the flight."
+        }
+      },
+      "required": [
+        "flight_id"
+      ]
+    }
+  }
+}

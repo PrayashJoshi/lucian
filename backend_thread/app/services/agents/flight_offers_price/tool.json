@@ -1,0 +1,19 @@
+{
+  "type": "function",
+  "function": {
+    "name": "flight_offers_price",
+    "description": "Prices specific flight offers using the flight offer ID.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "flight_offer_id": {
+          "type": "string",
+          "description": "The ID of the flight offer to price."
+        }
+      },
+      "required": [
+        "flight_offer_id"
+      ]
+    }
+  }
+}

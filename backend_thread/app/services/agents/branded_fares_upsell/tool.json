@@ -1,0 +1,24 @@
+{
+  "type": "function",
+  "function": {
+    "name": "branded_fares_upsell",
+    "description": "Upsells branded fare options based on the flight offer.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "flight_id": {
+          "type": "string",
+          "description": "The ID of the flight."
+        },
+        "offer_type": {
+          "type": "string",
+          "description": "Type of branded offer (e.g., Economy Plus, Business)."
+        }
+      },
+      "required": [
+        "flight_id",
+        "offer_type"
+      ]
+    }
+  }
+}

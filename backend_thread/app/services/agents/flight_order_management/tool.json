@@ -1,0 +1,24 @@
+{
+  "type": "function",
+  "function": {
+    "name": "flight_order_management",
+    "description": "Manages flight orders, allowing actions like cancellation or modification.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "order_id": {
+          "type": "string",
+          "description": "The ID of the order."
+        },
+        "action": {
+          "type": "string",
+          "description": "Action to perform (e.g., cancel, modify)."
+        }
+      },
+      "required": [
+        "order_id",
+        "action"
+      ]
+    }
+  }
+}

@@ -6,20 +6,19 @@
       <span class="text-4xl pr-4 pt-2 pacifico-regular">Lucian</span>
     </header>
 
-    <!-- Main Content -->
     <main class="flex-1 flex flex-col items-center justify-center gap-4">
       <LucianFace
         :listening="isListening"
         :talking="isTalking"
         :waiting="isWaiting"
         :hasContent="hasContent"
+        @start-listening="startListening"
       >
         <transition name="fade" mode="out-in">
           <component :is="currentContent" :key="currentContentKey" v-if="hasContent" />
         </transition>
       </LucianFace>
 
-      <!-- Include the MessageInput component -->
       <MessageInput />
     </main>
   </div>
@@ -28,51 +27,29 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue';
 import LucianFace from './components/LucianFace.vue';
-import ContentOne from './components/tests/content1.vue';
-import ContentTwo from './components/tests/content2.vue';
-import { ContentTypes, ContentType } from './constants/contentTypes';
-import MessageInput from './components/MessageInput.vue'; // Import the new component
+import MessageInput from './components/MessageInput.vue';
 
 // State Variables
 const isListening = ref(false);
 const isTalking = ref(false);
 const isWaiting = ref(false);
-const content = ref<ContentType>(ContentTypes.NONE);
+const content = ref(null);
 
-// Computed Property for Content Presence
-const hasContent = computed(() => content.value !== ContentTypes.NONE);
+const startListening = () => {
+  console.log("Listening started"); // Confirm listening in console
+  isListening.value = true;
 
-// Helper Function to Get the Correct Component
-const getComponent = (type: ContentType) => {
-  switch (type) {
-    case ContentTypes.ONE:
-      return ContentOne;
-    case ContentTypes.TWO:
-      return ContentTwo;
-    default:
-      return null;
-  }
+  // Trigger the backend WebSocket connection or speech-to-text logic
+  startSpeechRecognition();
 };
 
-// Dynamic Content Management
-const currentContent = computed(() => getComponent(content.value));
-const currentContentKey = ref(0);
-
-// Toggle Functions
-const toggleListening = () => (isListening.value = !isListening.value);
-const toggleTalking = () => (isTalking.value = !isTalking.value);
-const toggleWaiting = () => (isWaiting.value = !isWaiting.value);
-
-const setContent = (type: ContentType) => {
-  content.value = type;
-  currentContentKey.value++;
-};
-
-const clearContent = () => {
-  content.value = ContentTypes.NONE;
-  currentContentKey.value++;
+// Placeholder function to connect with WebSocket or Deepgram
+const startSpeechRecognition = async () => {
+  console.log("Connecting to Deepgram...");
+  // Connect to backend here and log events
 };
 </script>
+
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');

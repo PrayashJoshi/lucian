@@ -1,0 +1,18 @@
+{
+  "type": "function",
+  "function": {
+    "name": "flight_choice_prediction",
+    "description": "Predicts the best flight choices based on user preferences.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "user_preferences": {
+          "type": "object",
+          "description": "Preferences of the user (e.g., budget, airlines, layovers)."
+        }
+      },
+      "required": [
+        "user_preferences"
+      ]
+    }
+  }

@@ -1,0 +1,24 @@
+{
+  "type": "function",
+  "function": {
+    "name": "flight_create_orders",
+    "description": "Creates a flight order based on a flight offer ID and passenger details.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "flight_offer_id": {
+          "type": "string",
+          "description": "The ID of the flight offer."
+        },
+        "passenger_details": {
+          "type": "object",
+          "description": "Details of the passenger(s)."
+        }
+      },
+      "required": [
+        "flight_offer_id",
+        "passenger_details"
+      ]
+    }
+  }
+}
