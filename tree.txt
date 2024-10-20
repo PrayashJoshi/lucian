@@ -1,0 +1,248 @@
+.
+├── README.md
+├── backend_thread
+│   ├── README.md
+│   ├── app
+│   │   ├── __init__.py
+│   │   ├── __pycache__
+│   │   │   ├── __init__.cpython-310.pyc
+│   │   │   ├── __init__.cpython-312.pyc
+│   │   │   ├── main.cpython-310.pyc
+│   │   │   └── main.cpython-312.pyc
+│   │   ├── dependencies
+│   │   │   ├── __init__.py
+│   │   │   └── amadeus_client.py
+│   │   ├── main.py
+│   │   ├── models
+│   │   ├── routers
+│   │   │   ├── __init__.py
+│   │   │   ├── __pycache__
+│   │   │   │   ├── __init__.cpython-310.pyc
+│   │   │   │   ├── __init__.cpython-312.pyc
+│   │   │   │   ├── chat.cpython-310.pyc
+│   │   │   │   └── chat.cpython-312.pyc
+│   │   │   └── chat.py
+│   │   ├── services
+│   │   │   ├── __init__.py
+│   │   │   ├── __pycache__
+│   │   │   │   ├── __init__.cpython-310.pyc
+│   │   │   │   ├── __init__.cpython-312.pyc
+│   │   │   │   ├── communicator.cpython-310.pyc
+│   │   │   │   ├── communicator.cpython-312.pyc
+│   │   │   │   ├── llm.cpython-312.pyc
+│   │   │   │   ├── orchestrator.cpython-310.pyc
+│   │   │   │   ├── orchestrator.cpython-312.pyc
+│   │   │   │   ├── pagemaker_agent.cpython-310.pyc
+│   │   │   │   ├── pagemaker_agent.cpython-312.pyc
+│   │   │   │   ├── speech_to_text_streaming.cpython-312.pyc
+│   │   │   │   └── text_to_speech.cpython-312.pyc
+│   │   │   ├── agents
+│   │   │   │   ├── __inti__.py
+│   │   │   │   ├── branded_fares_upsell
+│   │   │   │   │   ├── __pycache__
+│   │   │   │   │   │   └── handler.cpython-312.pyc
+│   │   │   │   │   ├── handler.py
+│   │   │   │   │   └── tool.json
+│   │   │   │   ├── flight_availabilities
+│   │   │   │   │   ├── __pycache__
+│   │   │   │   │   │   └── handler.cpython-312.pyc
+│   │   │   │   │   ├── handler.py
+│   │   │   │   │   └── tool.json
+│   │   │   │   ├── flight_cheapest_date_search
+│   │   │   │   │   ├── __pycache__
+│   │   │   │   │   │   └── handler.cpython-312.pyc
+│   │   │   │   │   ├── handler.py
+│   │   │   │   │   └── tool.json
+│   │   │   │   ├── flight_choice_prediction
+│   │   │   │   │   ├── handler.py
+│   │   │   │   │   └── tool.json
+│   │   │   │   ├── flight_create_orders
+│   │   │   │   │   ├── __pycache__
+│   │   │   │   │   │   └── handler.cpython-312.pyc
+│   │   │   │   │   ├── handler.py
+│   │   │   │   │   └── tool.json
+│   │   │   │   ├── flight_inspiration_search
+│   │   │   │   │   ├── __pycache__
+│   │   │   │   │   │   └── handler.cpython-312.pyc
+│   │   │   │   │   ├── handler.py
+│   │   │   │   │   └── tool.json
+│   │   │   │   ├── flight_offers_price
+│   │   │   │   │   ├── __pycache__
+│   │   │   │   │   │   └── handler.cpython-312.pyc
+│   │   │   │   │   ├── handler.py
+│   │   │   │   │   └── tool.json
+│   │   │   │   ├── flight_offers_search
+│   │   │   │   │   ├── __pycache__
+│   │   │   │   │   │   └── handler.cpython-312.pyc
+│   │   │   │   │   ├── handler.py
+│   │   │   │   │   └── tool.json
+│   │   │   │   ├── flight_order_management
+│   │   │   │   │   ├── __pycache__
+│   │   │   │   │   │   └── handler.cpython-312.pyc
+│   │   │   │   │   ├── handler.py
+│   │   │   │   │   └── tool.json
+│   │   │   │   └── flight_seatmap_display
+│   │   │   │       ├── __pycache__
+│   │   │   │       │   └── handler.cpython-312.pyc
+│   │   │   │       ├── handler.py
+│   │   │   │       └── tool.json
+│   │   │   ├── communicator.py
+│   │   │   ├── llm.py
+│   │   │   ├── orchestrator.py
+│   │   │   ├── pagemaker_agent.py
+│   │   │   ├── speech_to_text_streaming.py
+│   │   │   └── text_to_speech.py
+│   │   ├── storage
+│   │   │   ├── __init__.py
+│   │   │   └── chat_responses.txt
+│   │   └── utils
+│   │       ├── __init__.py
+│   │       ├── __pycache__
+│   │       │   ├── __init__.cpython-310.pyc
+│   │       │   ├── __init__.cpython-312.pyc
+│   │       │   ├── config.cpython-310.pyc
+│   │       │   ├── config.cpython-312.pyc
+│   │       │   ├── logger.cpython-310.pyc
+│   │       │   └── logger.cpython-312.pyc
+│   │       ├── config.py
+│   │       ├── logger.py
+│   │       └── nlp_processor.py
+│   ├── frontend
+│   │   └── src
+│   │       └── components
+│   │           └── generated
+│   ├── requirements.txt
+│   ├── templates
+│   │   └── vue_component.jinja
+│   └── tests
+│       ├── __init__.py
+│       ├── test_agents.py
+│       ├── test_chat_endpoint.py
+│       └── test_orchestrator.py
+├── docs
+│   └── architecture.md
+├── frontend
+│   ├── README.md
+│   ├── index.html
+│   ├── package-lock.json
+│   ├── package.json
+│   ├── postcss.config.cjs
+│   ├── public
+│   │   └── vite.svg
+│   ├── src
+│   │   ├── App.vue
+│   │   ├── assets
+│   │   │   ├── primevue
+│   │   │   │   ├── accordion.css
+│   │   │   │   ├── autocomplete.css
+│   │   │   │   ├── avatar.css
+│   │   │   │   ├── badge.css
+│   │   │   │   ├── blockui.css
+│   │   │   │   ├── breadcrumb.css
+│   │   │   │   ├── button.css
+│   │   │   │   ├── buttongroup.css
+│   │   │   │   ├── card.css
+│   │   │   │   ├── carousel.css
+│   │   │   │   ├── cascadeselect.css
+│   │   │   │   ├── checkbox.css
+│   │   │   │   ├── chip.css
+│   │   │   │   ├── colorpicker.css
+│   │   │   │   ├── common.css
+│   │   │   │   ├── confirmdialog.css
+│   │   │   │   ├── confirmpopup.css
+│   │   │   │   ├── contextmenu.css
+│   │   │   │   ├── datatable.css
+│   │   │   │   ├── dataview.css
+│   │   │   │   ├── datepicker.css
+│   │   │   │   ├── dialog.css
+│   │   │   │   ├── divider.css
+│   │   │   │   ├── dock.css
+│   │   │   │   ├── drawer.css
+│   │   │   │   ├── fieldset.css
+│   │   │   │   ├── fileupload.css
+│   │   │   │   ├── floatlabel.css
+│   │   │   │   ├── galleria.css
+│   │   │   │   ├── iconfield.css
+│   │   │   │   ├── iftalabel.css
+│   │   │   │   ├── image.css
+│   │   │   │   ├── imagecompare.css
+│   │   │   │   ├── inplace.css
+│   │   │   │   ├── inputgroup.css
+│   │   │   │   ├── inputnumber.css
+│   │   │   │   ├── inputotp.css
+│   │   │   │   ├── inputtext.css
+│   │   │   │   ├── knob.css
+│   │   │   │   ├── listbox.css
+│   │   │   │   ├── megamenu.css
+│   │   │   │   ├── menu.css
+│   │   │   │   ├── menubar.css
+│   │   │   │   ├── message.css
+│   │   │   │   ├── metergroup.css
+│   │   │   │   ├── multiselect.css
+│   │   │   │   ├── orderlist.css
+│   │   │   │   ├── organizationchart.css
+│   │   │   │   ├── overlaybadge.css
+│   │   │   │   ├── paginator.css
+│   │   │   │   ├── panel.css
+│   │   │   │   ├── panelmenu.css
+│   │   │   │   ├── password.css
+│   │   │   │   ├── picklist.css
+│   │   │   │   ├── popover.css
+│   │   │   │   ├── progressbar.css
+│   │   │   │   ├── progressspinner.css
+│   │   │   │   ├── radiobutton.css
+│   │   │   │   ├── rating.css
+│   │   │   │   ├── ripple.css
+│   │   │   │   ├── scrollpanel.css
+│   │   │   │   ├── scrolltop.css
+│   │   │   │   ├── select.css
+│   │   │   │   ├── selectbutton.css
+│   │   │   │   ├── skeleton.css
+│   │   │   │   ├── slider.css
+│   │   │   │   ├── speeddial.css
+│   │   │   │   ├── splitbutton.css
+│   │   │   │   ├── splitter.css
+│   │   │   │   ├── stepper.css
+│   │   │   │   ├── tabs.css
+│   │   │   │   ├── tag.css
+│   │   │   │   ├── tailwind.css
+│   │   │   │   ├── terminal.css
+│   │   │   │   ├── textarea.css
+│   │   │   │   ├── tieredmenu.css
+│   │   │   │   ├── timeline.css
+│   │   │   │   ├── toast.css
+│   │   │   │   ├── togglebutton.css
+│   │   │   │   ├── toggleswitch.css
+│   │   │   │   ├── toolbar.css
+│   │   │   │   ├── tooltip.css
+│   │   │   │   ├── tree.css
+│   │   │   │   ├── treeselect.css
+│   │   │   │   └── treetable.css
+│   │   │   └── vue.svg
+│   │   ├── components
+│   │   │   ├── CarouselContent.vue
+│   │   │   ├── InvoiceForm.vue
+│   │   │   ├── LucianFace.vue
+│   │   │   ├── MessageInput.vue
+│   │   │   ├── WelcomeContent.vue
+│   │   │   └── tests
+│   │   │       ├── content1.vue
+│   │   │       └── content2.vue
+│   │   ├── constants
+│   │   │   └── contentTypes.ts
+│   │   ├── main.ts
+│   │   ├── style.css
+│   │   └── vite-env.d.ts
+│   ├── tailwind.config.cjs
+│   ├── tsconfig.app.json
+│   ├── tsconfig.json
+│   ├── tsconfig.node.json
+│   └── vite.config.ts
+├── render.yaml
+├── tests
+│   ├── test_agents.py
+│   ├── test_chat.py
+│   └── test_orchestrator.py
+└── tree.txt
+
+49 directories, 197 files

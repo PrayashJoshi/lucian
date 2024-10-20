@@ -42,6 +42,7 @@ const handleClick = () => {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  box-shadow: 0 0 20px rgba(137, 191, 216, 0.6);
 }
 
 /* Glow Animation When Listening */
