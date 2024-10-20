@@ -1,0 +1,25 @@
+User message: when is the best months to fly to europe
+
+Response: I'm sorry, I couldn't process that.
+
+User message: whens a good time to fly to monaco
+
+Response: I'm sorry, I couldn't process that.
+
+User message: what is the best time to visit paris
+
+Response: I'm sorry, I couldn't process that.
+
+User message: when is a good time to climb mount everest
+
+Response: The best time is typically late April to early June, during the pre-monsoon season.
+
+User message: hmm how about paris, when is it a good time to visit paris
+Response: Spring (April to June) is lovely! The weather's mild and flowers bloom. Have you been before?
+
+User message: no, i think i want to this summer
+Response: That sounds great! Summer trips can be so refreshing. Any specific destinations in mind?
+
+User message: want to see the eifel tower really, can you book me a trip there
+Response: I can't book trips, but I can help you plan! When do you want to go?
+
