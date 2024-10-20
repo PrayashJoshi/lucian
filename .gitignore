@@ -1,0 +1,18 @@
+# Ignore environment variable files
+backend/.env
+
+# Python cache files
+__pycache__/
+*.py[cod]
+
+# Byte-compiled / optimized / DLL files
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment directory (if any)
+venv/
+env/
+
+# VSCode settings (if you use VSCode)
+.vscode/
